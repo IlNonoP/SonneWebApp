@@ -1,6 +1,8 @@
 # SonneWebApp
 This program allows you to turn websites into apps on your linux device, they will be added to the application menu quickly. NOTE: This program does NOT create the installable packages, but through a python code allows ONLY ON YOUR COMPUTER to use them as apps
 
+![logo](https://github.com/user-attachments/assets/af5e6f1b-2139-4885-8934-c4c76e9fd933)
+
 
 ## Installation
 
