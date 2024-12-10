@@ -14,20 +14,16 @@ modules:
   - name: SonneWebApp
     buildsystem: simple
     build-commands:
-      - install -D main.py /app/main.py
-      - install -D icon.png /app/share/icons/hicolor/256x256/apps/com.ilnonop.sonnewebapp.png
-      - install -D icon.png /app/icon.png
-      - install -D SonneWebApp.desktop /app/share/applications/com.ilnonop.sonnewebapp.desktop
-      - install -D run.sh /app/bin/run.sh
+      # Copia i file dalla cartella flatpak del repository
+      - install -D flatpak/app/main.py /app/main.py
+      - install -D flatpak/app/icon.png /app/share/icons/hicolor/256x256/apps/com.ilnonop.sonnewebapp.png
+      - install -D flatpak/SonneWebApp.desktop /app/share/applications/com.ilnonop.sonnewebapp.desktop
+      - install -D flatpak/app/run.sh /app/bin/run.sh
     sources:
-      - type: file
-        path: app/main.py
-      - type: file
-        path: app/icon.png
-      - type: file
-        path: app/run.sh
-      - type: file
-        path: SonneWebApp.desktop
+      - type: git
+        url: https://github.com/IlNonoP/SonneWebApp.git
+        branch: main  # O il nome del branch che preferisci
+        dest: /app/  # I file saranno scaricati nella cartella /app del Flatpak
 
   - name: tkinter
     buildsystem: simple
@@ -71,4 +67,3 @@ modules:
           - make install
         post-install:
           - chmod +w ${FLATPAK_DEST}/lib/libtk8.6.so
-
