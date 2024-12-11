@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=SonneWebApp
+Comment=Convert webpage into app. GitHub: https://github.com/IlNonoP/SonneWebApp
+Exec=python3 ~/.config/SonneWebApp/main.py
+Icon=~/.config/SonneWebApp/icon.png
+Terminal=false
+Type=Application
+Categories=Utility;Web;
