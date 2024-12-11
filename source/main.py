@@ -138,7 +138,7 @@ window.title("Web To App")
 botton = Button(window, text = "Add web app", command=add_web_app)
 botton.pack()
 
-icon = PhotoImage(file='logo.png')
+icon = PhotoImage(file='icon.png')
 window.iconphoto(True, icon)
 
 
