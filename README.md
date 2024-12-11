@@ -18,7 +18,8 @@ This program allows you to turn websites into apps on your linux device, they wi
 ## Instruction
 The program should be clear, there are 2 buttons and a text
 
-![Schermata del 2024-12-09 20-20-18](https://github.com/user-attachments/assets/e6446738-cdc0-4d5e-ac69-1c66d57bb947)
+![Schermata del 2024-12-11 18-56-15](https://github.com/user-attachments/assets/e5549694-abf5-4b33-b5d7-df08e0caae6e)
+
 
 
 Add web app: With this button you can add your websites
@@ -30,7 +31,8 @@ Existing site: With this text you can see the apps created with SonneWebApp.
 ### Add web app
 From this screen you will be able to add the websites
 
-![Schermata del 2024-12-09 20-20-50](https://github.com/user-attachments/assets/1671ff10-9aa4-4e30-bfff-538660526b73)
+![Schermata del 2024-12-11 18-56-21](https://github.com/user-attachments/assets/6ce73ea0-8980-45ef-aa59-2ec3258d47f1)
+
 
 
 There are four fields:
@@ -46,7 +48,7 @@ To see the newly created app on the home screen you need to restart the script
 ### Remove a site
 From this screen you can remove apps created exclusively with SonneWebApp
 
-![Schermata del 2024-12-09 20-21-11](https://github.com/user-attachments/assets/88776f4e-b8d6-4bbe-a510-2bf2235cff41)
+![Schermata del 2024-12-11 18-56-26](https://github.com/user-attachments/assets/dd108131-c929-4f24-a1ef-68bf78b1961b)
 
 
 
