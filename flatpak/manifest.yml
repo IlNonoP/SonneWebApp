@@ -9,21 +9,19 @@ finish-args:
   - --socket=wayland
   - --share=network
   - --talk-name=org.freedesktop.FileManager1
-
 modules:
   - name: SonneWebApp
     buildsystem: simple
-    build-commands:
-      # Copia i file dalla cartella flatpak del repository
-      - install -D flatpak/app/main.py /app/main.py
-      - install -D flatpak/app/icon.png /app/share/icons/hicolor/256x256/apps/com.ilnonop.sonnewebapp.png
-      - install -D flatpak/SonneWebApp.desktop /app/share/applications/com.ilnonop.sonnewebapp.desktop
-      - install -D flatpak/app/run.sh /app/bin/run.sh
+    build-commands:      
+      - install -D flatpak/app/main.py ${FLATPAK_DEST}/main.py
+      - install -D flatpak/app/icon.png ${FLATPAK_DEST}/share/icons/hicolor/256x256/apps/com.ilnonop.sonnewebapp.png
+      - install -D flatpak/SonneWebApp.desktop ${FLATPAK_DEST}/share/applications/com.ilnonop.sonnewebapp.desktop
+      - install -D flatpak/app/run.sh ${FLATPAK_DEST}/bin/run.sh
+      - install -D flatpak/app/icon.png ${FLATPAK_DEST}/icon.png
     sources:
       - type: git
         url: https://github.com/IlNonoP/SonneWebApp.git
-        branch: main  # O il nome del branch che preferisci
-        dest: /app/  # I file saranno scaricati nella cartella /app del Flatpak
+        branch: main
 
   - name: tkinter
     buildsystem: simple
@@ -39,10 +37,6 @@ modules:
           - type: archive
             url: https://sourceforge.net/projects/tcl/files/Tcl/8.6.12/tcl8.6.12-src.tar.gz
             sha256: 26c995dd0f167e48b11961d891ee555f680c175f7173ff8cb829f4ebcde4c1a6
-            x-checker-data:
-              type: html
-              url: https://sourceforge.net/projects/tcl/rss
-              pattern: "<link>(https://sourceforge.net/.+/tcl(8\\.6\\.[\\d\\.]*\\d)-src.tar.gz)/download"
         subdir: unix
         build-commands:
           - ./configure --prefix=${FLATPAK_DEST}
@@ -56,10 +50,6 @@ modules:
           - type: archive
             url: https://sourceforge.net/projects/tcl/files/Tcl/8.6.12/tk8.6.12-src.tar.gz
             sha256: 12395c1f3fcb6bed2938689f797ea3cdf41ed5cb6c4766eec8ac949560310630
-            x-checker-data:
-              type: html
-              url: https://sourceforge.net/projects/tcl/rss
-              pattern: "<link>(https://sourceforge.net/.+/tk(8\\.6\\.[\\d\\.]*\\d)-src.tar.gz)/download"
         subdir: unix
         build-commands:
           - ./configure --prefix=${FLATPAK_DEST}
