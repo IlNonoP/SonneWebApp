@@ -19,6 +19,7 @@ This program allows you to turn websites into apps on your linux device, they wi
 ### Uninstallation
 ### Automated script
 1) Run ```wget https://github.com/IlNonoP/SonneWebApp/raw/refs/heads/main/Uninstallation.sh && bash Uninstallation.sh``` in your terminal
+
 N.B.: All the WebApp addedd will be permanently remove
 
 ## Instruction
