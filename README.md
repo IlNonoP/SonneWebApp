@@ -15,6 +15,12 @@ This program allows you to turn websites into apps on your linux device, they wi
 2) Download the last relase and unzip install
 3) Execute ```python3 main.py```
 4) The installation is complete! Now you can use the program!!!
+
+### Uninstallation
+### Automated script
+1) Run ```wget https://github.com/IlNonoP/SonneWebApp/raw/refs/heads/main/Uninstallation.sh && bash Uninstallation.sh``` in your terminal
+N.B.: All the WebApp addedd will be permanently remove
+
 ## Instruction
 The program should be clear, there are 2 buttons and a text
 
