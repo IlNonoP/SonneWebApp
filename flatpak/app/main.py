@@ -67,7 +67,7 @@ Type=Application
 Name={name}
 Exec=python3 {path}start_web_app.py "{name}" "{site}" "{scale}"
 Icon={file_icona}
-Comment=App created by SonneWebApp.py
+Comment=App created by SonneWebApp.py https://github.com/IlNonoP/SonneWebApp
 Keywords=sonne;
 NoDisplay=false
 '''
