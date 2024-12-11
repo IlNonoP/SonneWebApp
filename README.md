@@ -5,6 +5,11 @@ This program allows you to turn websites into apps on your linux device, they wi
 
 
 ## Installation
+### Automated script
+1) Run ```wget https://github.com/IlNonoP/SonneWebApp/raw/refs/heads/main/Installation.sh && bash Installation.sh``` in your terminal and wait
+2) Open the app from the system app launcher
+
+### Downloading files manually:
 
 1) Install Tkinter package for your linux distribution
 2) Download the last relase and unzip install
