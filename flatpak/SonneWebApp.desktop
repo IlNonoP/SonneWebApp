@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Sonne Web App
-Comment=Program that transform a web site into an app. GitHub: https://github.com/IlNonoP/SonneWebApp
-Exec=/bin/run.sh
+Comment=Program that transforms a website into an app. GitHub: https://github.com/IlNonoP/SonneWebApp
+Exec=com.ilnonop.sonnewebapp
 Icon=com.ilnonop.sonnewebapp
 Terminal=false
 Type=Application
